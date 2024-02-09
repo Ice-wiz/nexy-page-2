@@ -43,6 +43,9 @@ const App: React.FC = () => {
 
   return (
     <div>
+      <div style={{display:'flex',justifyContent:'flex-end', paddingTop:'10px' , paddingRight:'10px'}}>
+      <ExportCSV csvData={data} fileName="text-excel-doc" />
+      </div>
     <div>
       {renderTable()}
       <style>{`
@@ -78,14 +81,7 @@ const App: React.FC = () => {
       `}</style>
     </div>
   );
-
-
-
-
-
-
-       
-      <ExportCSV csvData={data} fileName="text-excel-doc" />
+      
       {/* <button onClick={exportDataToCSV}>export to csv</button> */}
     </div>
   );

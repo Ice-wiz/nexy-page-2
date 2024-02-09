@@ -25,7 +25,7 @@ export const ExportCSV: React.FC<Props> = ({ csvData, fileName }) => {
   };
 
   return (
-    <Button variant="warning" onClick={() => exportToCSV(csvData, fileName)}>
+    <Button style={{color:'green'}}onClick={() => exportToCSV(csvData, fileName)}>
       Export data
     </Button>
   );
